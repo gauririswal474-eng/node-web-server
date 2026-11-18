@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Sparkle Laundry</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header><nav><a class="brand" href="/home">Sparkle Laundry</a><a class="link" href="/home">Home</a><a class="link" href="/about">About</a><a class="link" href="/services">Services</a><a class="link" href="/pricing">Pricing</a><a class="link active" href="/contact">Contact</a></nav></header>
+  <main>
+    <section class="hero">
+      <h1>Contact Us</h1>
+      <p>Have a question or want to book a pickup? Reach out to us.</p>
+      <p><strong>Phone:</strong> +91 98765 43210<br><strong>Email:</strong> hello@sparklelaundry.example<br><strong>Hours:</strong> Mon - Sat, 8am - 8pm</p>
+    </section>
+    <form onsubmit="event.preventDefault(); this.reset(); alert('Thanks! (demo form, nothing is sent)');">
+      <label for="name">Name</label><input id="name" required>
+      <label for="msg">Message</label><textarea id="msg" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </main>
+  <footer>&copy; 2026 Sparkle Laundry. Served by a Node.js http server.</footer>
+</body>
+</html>

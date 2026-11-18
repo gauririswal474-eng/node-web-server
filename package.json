@@ -1,0 +1,8 @@
+{
+  "name": "gauri-task31-node-server",
+  "version": "1.0.0",
+  "description": "Simple web server built with the Node.js http module",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}

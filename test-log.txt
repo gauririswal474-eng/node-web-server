@@ -1,0 +1,15 @@
+# Test log - routes tested with curl against http://localhost:3000
+/                      -> 302 
+/home                  -> 200 text/html; charset=utf-8
+/about                 -> 200 text/html; charset=utf-8
+/contact               -> 200 text/html; charset=utf-8
+/services              -> 200 text/html; charset=utf-8
+/pricing               -> 200 text/html; charset=utf-8
+/css/style.css         -> 200 text/css; charset=utf-8
+/nothing               -> 404 text/html; charset=utf-8
+/about/                -> 200 text/html; charset=utf-8
+/css/../server.js      -> 404 text/html; charset=utf-8
+/css/missing.css       -> 404 text/html; charset=utf-8
+POST /home             -> 405
+/home title            -> <title>Home | Sparkle Laundry</title>
+/nothing body          -> <h1>Page not found</h1>
